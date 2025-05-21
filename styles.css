@@ -1,0 +1,171 @@
+* {
+  @import url("https://fonts.cdnfonts.com/css/font");
+  font-family: "Font", sans-serif;
+}
+body {
+  background: #18e4a7;
+  background: linear-gradient(
+    90deg,
+    rgb(31, 147, 114) 2%,
+    rgb(15, 16, 120) 52%,
+    rgb(79, 163, 134) 100%
+  );
+  color: white;
+}
+fieldset {
+  border-radius: 15px;
+  border: 3px solid rgba(3, 0, 11, 0.882);
+}
+form {
+  width: 600px;
+}
+legend {
+  background: #796294;
+  background: linear-gradient(
+    90deg,
+    rgba(121, 98, 148, 1) 0%,
+    rgba(227, 16, 16, 1) 55%,
+    rgba(184, 131, 106, 1) 80%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  border-radius: 15px;
+}
+input:required {
+  border: 2px solid red;
+}
+input:optional {
+  border: 3px dashed blueviolet;
+}
+input:read-only {
+  background: #22c4c7;
+  background: linear-gradient(
+    0deg,
+    rgba(34, 196, 199, 1) 0%,
+    rgba(253, 187, 45, 1) 100%
+  );
+  font-weight: 600;
+}
+input[type="submit"] {
+  background: #3cb43a;
+  background: linear-gradient(
+    90deg,
+    rgba(60, 180, 58, 1) 0%,
+    rgba(184, 169, 106, 1) 50%,
+    rgba(191, 139, 67, 1) 100%
+  );
+  color: red;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+input[type="radio"]:checked {
+  height: 20px;
+  width: 20px;
+}
+input[type="radio"]:checked + label {
+  color: yellow;
+}
+input[type="reset"] {
+  border: 3px solid black;
+  border-radius: 10px;
+  font-weight: 500px;
+  color: red;
+}
+select {
+  background-color: rgb(208, 84, 94);
+  border-radius: 10px;
+  cursor: pointer;
+}
+input[type="radio"] {
+  cursor: pointer;
+}
+
+input:focus {
+  background-color: rgb(243, 228, 154);
+}
+
+input[type="text"] + p {
+  display: none;
+}
+
+input[type="text"]:hover + p {
+  display: inline;
+  background-color: yellow;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+
+input[type="tel"] + p {
+  display: none;
+}
+
+input[type="tel"]:hover + p {
+  display: inline;
+  background-color: yellow;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+
+input[type="email"] + p {
+  display: none;
+}
+
+input[type="email"]:hover + p {
+  display: inline;
+  background-color: yellow;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+
+input[type="password"] + p {
+  display: none;
+}
+
+input[type="password"]:hover + p {
+  display: inline;
+  background-color: yellow;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+input[type="date"] + p {
+  display: none;
+}
+
+input[type="date"]:hover + p {
+  display: inline;
+  background-color: yellow;
+  color: black;
+  font-family: "Times New Roman", Times, serif;
+}
+
+img {
+  display: none;
+}
+
+input[type="email"]:focus:valid ~ img#valid {
+  display: inline;
+  width: 20px;
+  height: 20px;
+}
+
+input[type="email"]:focus:invalid ~ img#invalid {
+  display: inline;
+  width: 20px;
+  height: 20px;
+}
+
+#head:hover {
+  background: #833ab4;
+  background: linear-gradient(
+    90deg,
+    rgba(131, 58, 180, 1) 0%,
+    rgba(168, 170, 49, 1) 16%,
+    rgba(230, 194, 168, 1) 30%,
+    rgba(253, 29, 29, 1) 50%,
+    rgba(222, 84, 132, 1) 59%,
+    rgba(52, 112, 252, 1) 78%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  background-clip: text;
+  color: transparent;
+  cursor: pointer;
+}

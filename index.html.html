@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1 id="head">Course Registration Form</h1>
+    <form action="" autocomplete="on">
+      <fieldset>
+        <legend>Personal details</legend>
+        <table>
+          <tr>
+            <td><label for="">First Name</label></td>
+            <td>
+              <input
+                type="text"
+                placeholder="Ex:vinod"
+                required
+                size="15"
+                maxlength="15" />
+              <p>Enter your name</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Surname</label></td>
+            <td>
+              <input type="text" placeholder="Ex:S" />
+              <p>Enter your Surname</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Mobile Number</label></td>
+            <td>
+              <input
+                type="tel"
+                maxlength="10"
+                required
+                placeholder="Ex:987-897-0987" />
+              <p>Enter your Mobile Number</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Email</label></td>
+            <td>
+              <input type="email" placeholder="Ex:vinod@gmail.com" required />
+              <p>Enter your email</p>
+              <img
+                id="valid"
+                src="https://static.vecteezy.com/system/resources/thumbnails/011/858/556/small_2x/green-check-mark-icon-with-circle-tick-box-check-list-circle-frame-checkbox-symbol-sign-png.png"
+                alt="image not found" />
+              <img
+                id="invalid"
+                src="https://www.pngmart.com/files/17/Wrong-Sign-PNG-File.png"
+                alt="image not found" />
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Password</label></td>
+            <td>
+              <input
+                type="password"
+                min="8"
+                placeholder="min 8 characters"
+                required />
+              <p>Enter your password</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Confirm Password</label></td>
+            <td>
+              <input
+                type="password"
+                min="8"
+                placeholder="min 8 characters"
+                required />
+              <p>Enter your confirm password</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">DOB</label></td>
+            <td>
+              <input type="date" name="" id="" required />
+              <p>select your DOB</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">AGE</label></td>
+            <td>
+              <input type="text" size="5" required />
+              <p>Enter your age</p>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Gender</label></td>
+            <td>
+              <input type="radio" name="Gender" /><label for="">Male</label>
+              <input type="radio" name="Gender" /><label for="">Female</label>
+              <input type="radio" name="Gender" /><label for="">Others</label>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Select Country</label></td>
+            <td>
+              <select name="" id="">
+                <option value="">India</option>
+                <option value="">USA</option>
+                <option value="">Japan</option>
+                <option value="">Germany</option>
+                <option value="">Nepal</option>
+                <option value="">Others</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="">Upload Picture</label></td>
+            <td><input type="file" /></td>
+          </tr>
+
+          <tr>
+            <td><input type="reset" /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Course Details</legend>
+        <label for="">Select Course</label><br />
+        <select name="" id="">
+          <option value="">Java Full Stack</option>
+          <option value="">Python Full Stack</option>
+          <option value="">Mern Full Stack</option></select
+        ><br />
+        <label for="">Delivery Mode</label>
+        <input type="radio" name="dm" /><label for="">ONLINE</label>
+        <input type="radio" name="dm" /><label for="">OFFLINE</label><br />
+        <label for="">INSTITUTE NAME:</label>
+        <input type="text" value="TAP ACADEMY" size="10" readonly /><br />
+        <label for="">Comments:</label><br />
+        <textarea rows="4" cols="40"></textarea>
+      </fieldset>
+      <br />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
